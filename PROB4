@@ -1,0 +1,12 @@
+import java.util.Scanner;
+
+public class ex4 {
+   public ex13() {
+   }
+
+   public static void main(String[] var0) {
+      Scanner var1 = new Scanner(System.in);
+      char var2 = var1.next().charAt(0);
+      System.out.println(var2);
+   }
+}
