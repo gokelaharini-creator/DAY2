@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class ex4 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int seats = 5;
+
+        while (seats > 0) {
+            System.out.println("Available Seats: " + seats);
+
+            System.out.print("Book a seat? (yes/no): ");
+            String choice = sc.next();
+
+            if (choice.equalsIgnoreCase("yes")) {
+                seats--;
+                System.out.println("Seat Booked Successfully!");
+            } else {
+                break;
+            }
+        }
+
+        if (seats == 0) {
+            System.out.println("Booking Closed. No Seats Available.");
+        } else {
+            System.out.println("Booking Stopped.");
+        }
+    }
+}
