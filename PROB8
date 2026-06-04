@@ -1,0 +1,22 @@
+Import java.util.Scanner;
+
+public class ex2 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter Age: ");
+        int age = sc.nextInt();
+
+        if (age < 5) {
+            System.out.println("Category: Free Entry");
+            System.out.println("Amount: Rs.0");
+        } else if (age <= 18) {
+            System.out.println("Category: Child Ticket");
+            System.out.println("Amount: Rs.100");
+        } else {
+            System.out.println("Category: Adult Ticket");
+            System.out.println("Amount: Rs.200");
+        }
+    }
+}
+    
